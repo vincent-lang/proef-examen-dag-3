@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Feature_01_Controller;
+use App\Models\Persoon;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $personen = Persoon::all();
+    return view('welcome', compact('personen'));
 });
+
+Route::get('feature_01/index/{persoon}', [Feature_01_Controller::class, 'index'])->name('feature_01.index');
+
+Route::post('feature_01/index/selected/{persoon}', [Feature_01_Controller::class, 'selectedIndex'])->name('feature_01.selectedIndex');
