@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
+        //* this calls the other seeder to run them
         $this->call([
             BaanSeeder::class,
             PersoonSeeder::class,

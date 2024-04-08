@@ -12,6 +12,7 @@ class BaanSeeder extends Seeder
      */
     public function run(): void
     {
+        //* these fill the table baans with this data
         \App\Models\Baan::create([
             'Nummer' => 1,
             'HeeftHek' => 0,

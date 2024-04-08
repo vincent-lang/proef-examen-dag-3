@@ -12,6 +12,7 @@ class ReserveringSeeder extends Seeder
      */
     public function run(): void
     {
+        //* these fill the table reserverings with this data
         \App\Models\Reservering::create([
             'persoon_id' => 1,
             'openingstijd_id' => 2,

@@ -9,16 +9,20 @@
 </head>
 
 <body>
+    //* this is the animated background
     <div class="background"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
     <div class="title">
         <div class="title-form">
             <h3>Overzicht reserveringen van {{$persoon->Voornaam}} {{$persoon->Tussenvoegsel}} {{$persoon->Achternaam}}</h3>
+            //* this is the form to select the date
             <form action="{{route('feature_01.selectedIndex', [$persoon->id])}}" method="post">@csrf @method('post')
                 <input type="date" name="date">
                 <input class="submit" type="submit" value="Toon Reserveringen">
             </form>
         </div>
     </div>
+    //* this is the table with the reserveringen
+    //* if there are no reserveringen it will show an error message
     @if($reserveringen->IsNotEmpty())
     <div class="table">
         <table>
@@ -34,6 +38,7 @@
                 </tr>
             </thead>
             <tbody>
+                //* this is the foreach loop to show all the reserveringen
                 @foreach($reserveringen as $reservering)
                 <tr>
                     <td>{{$persoon->Voornaam}} {{$persoon->Tussenvoegsel}} {{$persoon->Achternaam}}</td>
@@ -49,6 +54,7 @@
         </table>
     </div>
     @else
+    //* this is the error message
     <h3 class="error-text">
         Er is geen informatie over deze periode
     </h3>

@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        //* this makes the table for reserveringen
         Schema::create('reserverings', function (Blueprint $table) {
             $table->id();
             $table->integer('persoon_id')->references('id')->on('persoons');

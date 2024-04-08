@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        //* this makes the table for persoons
         Schema::create('persoons', function (Blueprint $table) {
             $table->id();
             $table->integer('type_persoon_id')->references('id')->on('type_persoons');

@@ -9,11 +9,13 @@ class Baan extends Model
 {
     use HasFactory;
 
+    //* the fillable fields for the baan
     protected $fillable = [
         'Nummer',
         'HeeftHek',
     ];
 
+    //* the relationship between the baan and the reservering
     public function Reservering()
     {
         return $this->hasOne(Reservering::class);

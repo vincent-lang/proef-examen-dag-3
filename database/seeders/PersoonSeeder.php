@@ -12,6 +12,7 @@ class PersoonSeeder extends Seeder
      */
     public function run(): void
     {
+        //* these fill the table persoons with this data
         \App\Models\Persoon::create([
             'type_persoon_id' => 1,
             'Voornaam' => 'Mazin',

@@ -9,6 +9,7 @@ class Reservering extends Model
 {
     use HasFactory;
 
+    //* the fillable fields for the reservering
     protected $fillable = [
         'persoon_id',
         'openingstijd_id',
@@ -25,11 +26,13 @@ class Reservering extends Model
         'AantalKinderen',
     ];
 
+    //* the relationship between the reservering and the persoon
     public function Persoon()
     {
         return $this->belongsTo(Persoon::class);
     }
 
+    //* the relationship between the reservering and the baan
     public function Baan()
     {
         return $this->belongsTo(Baan::class);

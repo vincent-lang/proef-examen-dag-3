@@ -11,6 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
+
+        //* this makes the table for baans
         Schema::create('baans', function (Blueprint $table) {
             $table->id();
             $table->integer('Nummer');
