@@ -21,7 +21,7 @@
             <thead>
                 <tr>
                     <th>Naam</th>
-                    <th>Reserveringen</th>
+                    <th colspan="2">Reserveringen</th>
                 </tr>
             </thead>
             <tbdoy>
@@ -29,7 +29,10 @@
                 <tr>
                     <td>{{$persoon->Voornaam}} {{$persoon->Tussenvoegsel}} {{$persoon->Achternaam}}</td>
                     <td>
-                        <a href="{{route('feature_01.index', [$persoon->id])}}">Reserveringen</a>
+                        <a href="{{route('feature_01.index', [$persoon->id])}}">bekijken</a>
+                    </td>
+                    <td>
+                        <a href="{{route('feature_02.index', [$persoon->id])}}">wijzigen</a>
                     </td>
                 </tr>
                 @endforeach
