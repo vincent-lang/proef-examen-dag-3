@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('reserverings', function (Blueprint $table) {
             $table->id();
-            $table->integer('persoon_id');
+            $table->integer('persoon_id')->references('id')->on('persoons');
             $table->integer('openingstijd_id');
             $table->integer('tarief_id');
-            $table->integer('baan_id');
+            $table->integer('baan_id')->references('id')->on('baans');
             $table->integer('pakketOptie_id')->nullable();
             $table->integer('reserveringStatus_id');
             $table->string('Reserveringsnummer');
