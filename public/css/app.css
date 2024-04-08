@@ -105,6 +105,11 @@ div.table, div.title, div.contact {
     margin-left: 1rem;
 }
 
+div.table {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
 div.title {
     font-weight: bold;
 }
@@ -193,7 +198,6 @@ input.submit {
 
 h3.succes-text {
     text-align: center;
-    border: 0.1rem solid var(--lime);
     padding: 1rem;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -202,7 +206,6 @@ h3.succes-text {
 
 h3.error-text {
     text-align: center;
-    border: 0.1rem solid var(--red);
     padding: 1rem;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -225,4 +228,26 @@ div.title-form {
 
 div.title-form>form {
     margin-left: 1rem;
+}
+
+th.text-left {
+    text-align: left;
+}
+
+div.form-wijzig {
+    flex-direction: column;
+    width: fit-content;
+}
+
+div.form-wijzig>input {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+div.label-form, div.form-wijzig {
+    display: flex;
+}
+
+div.label-form>label {
+    margin-right: 1rem;
 }
