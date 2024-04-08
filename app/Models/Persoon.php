@@ -10,7 +10,7 @@ class Persoon extends Model
     use HasFactory;
 
     protected $fillable = [
-        'typePersoon_id',
+        'type_persoon_id',
         'Voornaam',
         'Tussenvoegsel',
         'Achternaam',

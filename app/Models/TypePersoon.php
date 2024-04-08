@@ -15,6 +15,6 @@ class TypePersoon extends Model
 
     public function Persoon()
     {
-        return $this->hasMany(Persoon::class);
+        return $this->hasOne(Persoon::class);
     }
 }
