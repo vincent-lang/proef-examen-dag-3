@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $personen = Persoon::all();
     return view('welcome', compact('personen'));
-});
+})->name('welcome');
 
 Route::get('feature_01/index/{persoon}', [Feature_01_Controller::class, 'index'])->name('feature_01.index');
 

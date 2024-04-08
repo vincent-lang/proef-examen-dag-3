@@ -146,6 +146,7 @@ div.buttons {
     height: fit-content;
     padding: 1rem;
     margin-left: 1rem;
+    margin-top: 1rem;
 }
 
 div.buttons>a {

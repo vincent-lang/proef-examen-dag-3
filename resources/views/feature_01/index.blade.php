@@ -48,6 +48,9 @@
             </tbody>
         </table>
     </div>
+    <div class="buttons">
+        <a href="{{route('welcome')}}">home</a>
+    </div>
     @else
     <h3 class="error-text">
         Er is geen informatie over deze periode
