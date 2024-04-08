@@ -13,7 +13,7 @@ class PersoonSeeder extends Seeder
     public function run(): void
     {
         \App\Models\Persoon::create([
-            'typePersoon_id' => 1,
+            'type_persoon_id' => 1,
             'Voornaam' => 'Mazin',
             'Tussenvoegsel' => null,
             'Achternaam' => 'Jamil',
@@ -26,7 +26,7 @@ class PersoonSeeder extends Seeder
         ]);
 
         \App\Models\Persoon::create([
-            'typePersoon_id' => 1,
+            'type_persoon_id' => 1,
             'Voornaam' => 'Arjan',
             'Tussenvoegsel' => 'de',
             'Achternaam' => 'Ruijter',
@@ -39,7 +39,7 @@ class PersoonSeeder extends Seeder
         ]);
 
         \App\Models\Persoon::create([
-            'typePersoon_id' => 1,
+            'type_persoon_id' => 1,
             'Voornaam' => 'Hans',
             'Tussenvoegsel' => null,
             'Achternaam' => 'Odijk',
@@ -52,7 +52,7 @@ class PersoonSeeder extends Seeder
         ]);
 
         \App\Models\Persoon::create([
-            'typePersoon_id' => 1,
+            'type_persoon_id' => 1,
             'Voornaam' => 'Dennis',
             'Tussenvoegsel' => 'van',
             'Achternaam' => 'Wakeren',
@@ -65,7 +65,7 @@ class PersoonSeeder extends Seeder
         ]);
 
         \App\Models\Persoon::create([
-            'typePersoon_id' => 2,
+            'type_persoon_id' => 2,
             'Voornaam' => 'Wilco',
             'Tussenvoegsel' => 'van de',
             'Achternaam' => 'Grift',
@@ -78,7 +78,7 @@ class PersoonSeeder extends Seeder
         ]);
 
         \App\Models\Persoon::create([
-            'typePersoon_id' => 3,
+            'type_persoon_id' => 3,
             'Voornaam' => 'Tom',
             'Tussenvoegsel' => null,
             'Achternaam' => 'Sanders',
@@ -91,7 +91,7 @@ class PersoonSeeder extends Seeder
         ]);
 
         \App\Models\Persoon::create([
-            'typePersoon_id' => 3,
+            'type_persoon_id' => 3,
             'Voornaam' => 'Andrew',
             'Tussenvoegsel' => null,
             'Achternaam' => 'Sanders',
@@ -104,7 +104,7 @@ class PersoonSeeder extends Seeder
         ]);
 
         \App\Models\Persoon::create([
-            'typePersoon_id' => 3,
+            'type_persoon_id' => 3,
             'Voornaam' => 'Julian',
             'Tussenvoegsel' => null,
             'Achternaam' => 'Kaldenheuvel',

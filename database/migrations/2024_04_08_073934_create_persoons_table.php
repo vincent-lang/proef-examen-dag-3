@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('persoons', function (Blueprint $table) {
             $table->id();
-            $table->integer('typePersoon_id')->references('id')->on('type_persoons');
+            $table->integer('type_persoon_id')->references('id')->on('type_persoons');
             $table->string('Voornaam');
             $table->string('Tussenvoegsel')->nullable();
             $table->string('Achternaam');
