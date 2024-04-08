@@ -6,6 +6,7 @@
 
 :root {
     --lime: rgba(0, 255, 0, 1);
+    --red: rgba(255, 0, 0, 1);
     --white: rgba(255, 255, 255, 1);
     --black: rgba(15, 15, 15, 1);
 }
@@ -97,9 +98,15 @@ div.background span:nth-child(10) {
     }
 }
 
+div.form
+
 div.table, div.title, div.contact {
     margin-top: 1rem;
     margin-left: 1rem;
+}
+
+div.title {
+    font-weight: bold;
 }
 
 table, th, td {
@@ -128,7 +135,7 @@ img.small-img {
     width: 10%;
 }
 
-div.contact>a {
+div.contact>a, table>tbody>tr>td>a {
     font-weight: bold;
     color: var(--white);
 }
@@ -175,7 +182,7 @@ div.section>input {
     border-radius: 0.5rem;
 }
 
-div.submit>input {
+input.submit {
     border-color: var(--lime);
     background-color: transparent;
     color: var(--lime);
@@ -184,13 +191,16 @@ div.submit>input {
     cursor: pointer;
 }
 
-div.submit {
-    display: flex;
-    justify-content: center;
-    width: 30%;
+h3.succes-text {
+    text-align: center;
+    border: 0.1rem solid var(--lime);
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 50%;
 }
 
-h3.succes-text {
+h3.error-text {
     text-align: center;
     border: 0.1rem solid var(--red);
     padding: 1rem;
@@ -206,4 +216,13 @@ tr.flex {
 
 div.table-flex {
     display: flex;
+}
+
+div.title-form {
+    display: flex;
+    align-items: center;
+}
+
+div.title-form>form {
+    margin-left: 1rem;
 }
