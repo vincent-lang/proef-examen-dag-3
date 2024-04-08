@@ -17,4 +17,14 @@ class Persoon extends Model
         'Roepnaam',
         'IsVolwassen',
     ];
+
+    public function TypePersoon()
+    {
+        return $this->belongsTo(TypePersoon::class);
+    }
+
+    public function Reservering()
+    {
+        return $this->hasMany(Reservering::class);
+    }
 }

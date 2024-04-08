@@ -12,4 +12,9 @@ class TypePersoon extends Model
     protected $fillable = [
         'Naam',
     ];
+
+    public function Persoon()
+    {
+        return $this->hasMany(Persoon::class);
+    }
 }

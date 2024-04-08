@@ -13,4 +13,9 @@ class Baan extends Model
         'Nummer',
         'HeeftHek',
     ];
+
+    public function Reservering()
+    {
+        return $this->hasOne(Reservering::class);
+    }
 }

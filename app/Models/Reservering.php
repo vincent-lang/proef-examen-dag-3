@@ -24,4 +24,14 @@ class Reservering extends Model
         'AantalVolwassenen',
         'AantalKinderen',
     ];
+
+    public function Persoon()
+    {
+        return $this->belongsTo(Persoon::class);
+    }
+
+    public function Baan()
+    {
+        return $this->belongsTo(Baan::class);
+    }
 }
